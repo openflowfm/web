@@ -12,4 +12,7 @@ for (const [, url] of html.matchAll(/(?:href|src)="([^"]+)"/g)) {
 }
 assert(html.includes('<title>open[flow]'), 'Missing site title');
 assert(!/https?:[^"\s]+\.(?:css|js|woff2?)/.test(html), 'Unexpected remote runtime asset');
+const css = await readFile(resolve(root, 'styles.css'), 'utf8');
+for (const [, url] of css.matchAll(/url\(['"]?(\.\/[^)'"]+)['"]?\)/g)) await access(resolve(root, url));
+for (const [, script] of html.matchAll(/<script>([\s\S]*?)<\/script>/g)) new Function(script);
 console.log('Static site checks passed: local assets, section links, unique ids and metadata.');

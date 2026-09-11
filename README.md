@@ -1,6 +1,6 @@
 # open[flow] web
 
-The open[flow] marketing site: a small, static proof of concept based on the product-journal design. Ivory, ink, serif headings and a diagram that explains local stem separation. No framework, build step, dependencies or remotely loaded fonts.
+The open[flow] marketing site: a small, static proof of concept based on the user-selected original A / After dark concept. Pure black, ivory typography, an amber filament wave and three product previews. No framework, build step, dependencies or remotely loaded fonts.
 
 ## Local preview
 
@@ -14,9 +14,11 @@ Open http://127.0.0.1:5678. Set `PORT` to use another port. The local server bin
 
 ## Edit and check
 
-- `dist/index.html` contains the page content and accessible stem diagram.
+- `dist/index.html` contains the page content and native About disclosure.
 - `dist/styles.css` contains the responsive layout and theme.
 - `dist/assets/openflow-mark.png` is the selected open[flow] logo.
+- `dist/assets/amber-wave.png` is the standalone hero artwork.
+- `dist/assets/homepage-concept.png` is the supplied concept used for labelled product preview panels.
 
 ```sh
 npm run check
@@ -36,4 +38,4 @@ All local asset URLs are relative, so the site works under the `/web/` project p
 
 Capabilities come from the set[flow], visual[flow] and mix[flow] module documentation in [better-session-view](https://github.com/ryangavin/better-session-view). Product links currently lead to those modules; the site makes no release or download claims.
 
-The chosen B2 proposal uses a restrained editorial hierarchy. Research included [Siteinspire](https://www.siteinspire.com/), [teenage engineering](https://teenage.engineering/products) and [Smörgåsbord](https://smorgasbord.studio/). Their product focus and quiet navigation informed the direction; no layouts or assets were copied.
+The selected original A proposal uses bold typography, a flowing amber hero and three product columns. The wave is a standalone generated asset. Product panels use CSS viewports into the supplied concept image, with visible Concept preview labels; they are not actual app screenshots. Research included [Siteinspire](https://www.siteinspire.com/), [teenage engineering](https://teenage.engineering/products) and [Smörgåsbord](https://smorgasbord.studio/). Their product focus and quiet navigation informed the direction; no layouts or assets were copied.

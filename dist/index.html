@@ -1,100 +1,40 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f5ee">
-  <meta name="description" content="open[flow]: tools for managing an Ableton Live set, building live visuals and separating stems locally.">
-  <title>open[flow] — A closer look at your music.</title>
-  <link rel="icon" href="./assets/openflow-mark.png" type="image/png">
-  <link rel="stylesheet" href="./styles.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000">
+<meta name="description" content="Manage your Live set. Shape the visuals. Take a mix apart. Discover open[flow], tools for music and performance.">
+<title>open[flow] — Tools for the way you play.</title>
+<link rel="icon" href="./assets/openflow-mark.png" type="image/png"><link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <div class="page">
-    <header class="masthead">
-      <a class="brand" href="./" aria-label="open flow home">
-        <img src="./assets/openflow-mark.png" width="68" height="68" alt="">
-        <span>open[flow]</span>
-      </a>
-      <nav aria-label="Main navigation">
-        <a href="#apps">The apps</a>
-        <a href="#about">About</a>
-        <a href="https://github.com/openflowfm">GitHub <span aria-hidden="true">↗</span></a>
-      </nav>
-    </header>
-    <main id="main">
-      <section class="intro" aria-labelledby="intro-title">
-        <div class="intro-copy">
-          <h1 id="intro-title">A closer look<br>at your music.</h1>
-          <p>Tools for managing a Live set, building visuals and separating stems.</p>
-          <a class="text-link" href="#apps">Explore the apps <span aria-hidden="true">↗</span></a>
-        </div>
-        <nav class="collection" aria-label="App collection">
-          <p class="eyebrow">In this collection</p>
-          <a href="#set">set[flow] <span>— Session management</span></a>
-          <a href="#visual">visual[flow] <span>— Live visuals</span></a>
-          <a href="#mix">mix[flow] <span>— Stem separation</span></a>
-        </nav>
-      </section>
-      <div id="apps" class="apps">
-        <section id="mix" class="feature" aria-labelledby="mix-title">
-          <p class="eyebrow feature-index">01 / mix[flow]</p>
-          <figure class="stem-figure">
-            <svg viewBox="0 0 530 260" role="img" aria-labelledby="stem-title stem-description">
-              <title id="stem-title">One mix, four stems</title>
-              <desc id="stem-description">A mix separates into drums, bass, vocals and other instruments.</desc>
-              <rect x="0" y="99" width="140" height="70" fill="currentColor"/>
-              <text x="70" y="142" text-anchor="middle" fill="#f7f5ee">A mix</text>
-              <g fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M159 134h47m-11-11 11 11-11 11M231 44h24m-24 0v180h24m-24-120h24m-24 60h24"/>
-              </g>
-              <g fill="#edaf26">
-                <rect x="269" y="30" width="120" height="27"/>
-                <rect x="269" y="90" width="120" height="27"/>
-                <rect x="269" y="150" width="120" height="27"/>
-                <rect x="269" y="210" width="120" height="27"/>
-              </g>
-              <g fill="currentColor"><text x="410" y="50">Drums</text><text x="410" y="110">Bass</text><text x="410" y="170">Vocals</text><text x="410" y="230">Other</text></g>
-            </svg>
-            <figcaption>One mix, four stems.</figcaption>
-          </figure>
-          <div class="feature-copy">
-            <h2 id="mix-title">Hear the parts.</h2>
-            <p>mix[flow] separates audio locally into drums, bass, vocals and other instruments. Play the stems and adjust their levels.</p>
-            <a class="text-link" href="https://github.com/ryangavin/better-session-view/tree/main/mix">Explore mix[flow] <span aria-hidden="true">↗</span></a>
-          </div>
-        </section>
-        <section id="set" class="article-row" aria-labelledby="set-title">
-          <p class="eyebrow">02 / set[flow]</p>
-          <h2 id="set-title">See the whole set.</h2>
-          <div>
-            <p>A session manager for Ableton Live. Work with your clip grid, mixer and device chain, and organize songs in your Live set.</p>
-            <a class="text-link" href="https://github.com/ryangavin/better-session-view/tree/main/set">Explore set[flow] <span aria-hidden="true">↗</span></a>
-          </div>
-        </section>
-        <section id="visual" class="article-row" aria-labelledby="visual-title">
-          <p class="eyebrow">03 / visual[flow]</p>
-          <h2 id="visual-title">Give the set<br>a visual language.</h2>
-          <div>
-            <p>A VJ rig that reads your Live set. Build visuals with a graph of connected nodes and keep time with Ableton Link.</p>
-            <a class="text-link" href="https://github.com/ryangavin/better-session-view/tree/main/visuals">Explore visual[flow] <span aria-hidden="true">↗</span></a>
-          </div>
-        </section>
-      </div>
-      <section id="about" class="about article-row" aria-labelledby="about-title">
-        <p class="eyebrow">About open[flow]</p>
-        <h2 id="about-title">Different parts<br>of the process.</h2>
-        <div>
-          <p>open[flow] is a family of music tools. set[flow] and visual[flow] work with Ableton Live through a shared bridge. mix[flow] works with audio locally, on its own.</p>
-          <a class="text-link" href="https://github.com/ryangavin/better-session-view/wiki">Read the user guide <span aria-hidden="true">↗</span></a>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <nav aria-label="Footer navigation"><a href="#set">set[flow]</a><a href="#visual">visual[flow]</a><a href="#mix">mix[flow]</a></nav>
-      <a href="https://github.com/openflowfm/web">Site source <span aria-hidden="true">↗</span></a>
-    </footer>
-  </div>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="page">
+<header class="masthead">
+<a class="brand" href="./" aria-label="open flow home"><span class="brand-mark"><img src="./assets/openflow-mark.png" width="70" height="70" alt=""></span><span>open[flow]</span></a>
+<nav aria-label="Main navigation"><a href="#apps">Apps</a><a href="#about">About</a><a href="https://github.com/openflowfm">GitHub</a></nav>
+</header>
+<main id="main">
+<section class="hero" aria-labelledby="hero-title">
+<div class="hero-copy"><h1 id="hero-title">Tools for the<br>way you play.</h1><p>Manage your Live set. Shape the visuals. Take a mix apart.</p>
+<div class="actions"><a class="button primary" href="#apps">Explore the apps <span aria-hidden="true">→</span></a><a class="button secondary" href="https://github.com/openflowfm">View on GitHub</a></div></div>
+<p class="hero-note">Music<br>meets<br>what’s<br>next<span aria-hidden="true">—</span></p>
+</section>
+<section class="apps" id="apps" aria-label="The open flow apps">
+<article id="set" class="app"><a class="app-link" href="https://github.com/ryangavin/better-session-view/tree/main/set"><h2>set[flow]</h2><p>Session management for Ableton Live</p><figure><div class="preview preview-set" role="img" aria-label="Concept illustration of a session grid, not an actual app screenshot"></div><figcaption>Concept preview</figcaption></figure></a></article>
+<article id="visual" class="app"><a class="app-link" href="https://github.com/ryangavin/better-session-view/tree/main/visuals"><h2>visual[flow]</h2><p>A VJ rig that follows your set</p><figure><div class="preview preview-visual" role="img" aria-label="Concept illustration of live visuals, not an actual app screenshot"></div><figcaption>Concept preview</figcaption></figure></a></article>
+<article id="mix" class="app"><a class="app-link" href="https://github.com/ryangavin/better-session-view/tree/main/mix"><h2>mix[flow]</h2><p>Local stem separation and playback</p><figure><div class="preview preview-mix" role="img" aria-label="Concept illustration of four audio stems, not an actual app screenshot"></div><figcaption>Concept preview</figcaption></figure></a></article>
+</section>
+<details id="about" class="about"><summary>About open[flow]</summary><div><p>open[flow] is a family of music tools. set[flow] and visual[flow] work with Ableton Live through a shared bridge. mix[flow] separates and plays audio locally, on its own.</p><a href="https://github.com/ryangavin/better-session-view/wiki">Read the user guide ↗</a></div></details>
+</main>
+<footer><p>Open to a more expressive tomorrow</p><span class="footer-rule" aria-hidden="true"></span><a href="https://github.com/openflowfm/web">[ &nbsp; open[flow] &nbsp; ]</a></footer>
+</div>
+<script>
+// Open the native About disclosure when its navigation link is followed.
+function revealAbout() { if (location.hash === '#about') document.querySelector('#about').open = true; }
+window.addEventListener('hashchange', revealAbout);
+document.querySelector('a[href="#about"]').addEventListener('click', () => { document.querySelector('#about').open = true; });
+revealAbout();
+</script>
 </body>
 </html>
