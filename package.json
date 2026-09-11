@@ -1,0 +1,9 @@
+{
+  "name": "@openflow/web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "The open[flow] marketing website",
+  "type": "module",
+  "scripts": { "dev": "node scripts/serve.mjs", "check": "node scripts/check.mjs" },
+  "engines": { "node": ">=22" }
+}
