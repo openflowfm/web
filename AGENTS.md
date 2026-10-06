@@ -9,4 +9,4 @@ This repository is the open[flow] marketing site, deployed to GitHub Pages.
 - Ground product claims in current project documentation. Do not invent availability or testimonials. The supplied mockup panels are explicitly labelled Concept preview, never real screenshots.
 - Keep content changes and README documentation together where relevant.
 - Run `npm run check` before committing. This does not replace browser QA when requested.
-- Every agent commit includes a blank line followed by `Co-authored-by: Codex <noreply@openai.com>`.
+- Every agent commit includes a blank line followed by a GitHub-compatible co-author trailer naming the agent that actually made it, e.g. `Co-authored-by: Codex <noreply@openai.com>` or `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`. Never name an agent that didn't write the commit.
