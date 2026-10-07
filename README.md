@@ -10,7 +10,7 @@ Requires Node.js 22 or newer.
 npm run dev
 ```
 
-Open http://127.0.0.1:5678. Set `PORT` to use another port. The local server binds to loopback only.
+It listens on `PORT` when set (a launcher such as `.claude/launch.json` with `autoPort` sets it), otherwise on a free port from the OS, and prints the URL. The local server binds to loopback only.
 
 ## Edit and check
 

@@ -2,7 +2,8 @@ import { createServer } from 'node:http';
 import { readFile } from 'node:fs/promises';
 import { resolve, extname, sep } from 'node:path';
 const root = resolve(import.meta.dirname, '../dist');
-const port = Number(process.env.PORT || 5678);
+// PORT when a launcher sets one, otherwise a free port from the OS (0).
+const port = Number(process.env.PORT || 0);
 const mime = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.png': 'image/png' };
 createServer(async (req, res) => {
   try {
@@ -13,4 +14,4 @@ createServer(async (req, res) => {
     res.writeHead(200, { 'Content-Type': mime[extname(file)] || 'application/octet-stream', 'Cache-Control': 'no-store' });
     res.end(data);
   } catch { res.writeHead(404).end('Not found'); }
-}).listen(port, '127.0.0.1', () => console.log(`Local: http://127.0.0.1:${port}`));
+}).listen(port, '127.0.0.1', function () { console.log(`Local: http://127.0.0.1:${this.address().port}`); });
