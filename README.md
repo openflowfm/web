@@ -19,6 +19,8 @@ It listens on `PORT` when set (a launcher such as `.claude/launch.json` with `au
 - `dist/assets/openflow-mark.png` is the selected open[flow] logo.
 - `dist/assets/amber-wave.png` is the standalone hero artwork.
 - `dist/assets/homepage-concept.png` is the supplied concept used for labelled product preview panels.
+- `dist/assets/video/` holds the visual[flow] teaser as served on the page: 1080p (~15 MB) and a 720×1280 vertical cut (~12 MB), two-pass H.264 with `+faststart`, and a poster frame.
+- `media/` holds the 1080p masters of the teaser (landscape and 1080×1920 vertical), in Git LFS. They aren't deployed.
 
 ```sh
 npm run check
@@ -39,3 +41,9 @@ All local asset URLs are relative, so the site works under the `/web/` project p
 Capabilities come from the set[flow], visual[flow] and mix[flow] module documentation in [better-session-view](https://github.com/ryangavin/better-session-view). Product links currently lead to those modules; the site makes no release or download claims.
 
 The selected original A proposal uses bold typography, a flowing amber hero and three product columns. The wave is a standalone generated asset. Product panels use CSS viewports into the supplied concept image, with visible Concept preview labels; they are not actual app screenshots. Research included [Siteinspire](https://www.siteinspire.com/), [teenage engineering](https://teenage.engineering/products) and [Smörgåsbord](https://smorgasbord.studio/). Their product focus and quiet navigation informed the direction; no layouts or assets were copied.
+
+The visual[flow] teaser is real footage, not a concept: every frame is drawn by the visual[flow] engine from the music, and the edit is made in Remotion. Its source, cut lists and how to re-render it are in [openflowfm/visuals `teaser/`](https://github.com/openflowfm/visuals/tree/main/teaser). The presets it shows are from the Cream of the Crop MilkDrop pack, by their authors. The music is a placeholder beat until there is a real track, and the page says so.
+
+## Licence
+
+MIT; see [LICENSE](LICENSE).
