@@ -1,6 +1,6 @@
 # open[flow] web
 
-The open[flow] marketing site: a small, static proof of concept based on the user-selected original A / After dark concept. Pure black, ivory typography, an amber filament wave and three product previews. No framework, build step, dependencies or remotely loaded fonts.
+The open[flow] marketing site: a small, static proof of concept based on the user-selected original A / After dark concept. Pure black, ivory typography, an amber filament wave, visual[flow] and its teaser on the first screen, and the three apps below it. No framework, build step, dependencies or remotely loaded fonts.
 
 ## Local preview
 
@@ -53,7 +53,9 @@ on in the repo's Pages settings.
 
 ## Content and design
 
-Capabilities come from each app's own repository, and each app card links there: [openflowfm/set](https://github.com/openflowfm/set), [openflowfm/visuals](https://github.com/openflowfm/visuals) and [openflowfm/mix](https://github.com/openflowfm/mix). The About section's user guide is still the [better-session-view wiki](https://github.com/ryangavin/better-session-view/wiki). The site makes no release or download claims.
+Capabilities come from each app's own repository, and each app card links there: [openflowfm/set](https://github.com/openflowfm/set), [openflowfm/visuals](https://github.com/openflowfm/visuals) and [openflowfm/mix](https://github.com/openflowfm/mix). The About section's user guide is still the [better-session-view wiki](https://github.com/ryangavin/better-session-view/wiki). visual[flow] is marked "Now on GitHub" because its source is public and builds; set[flow] and mix[flow] are marked "Coming soon". The site makes no release or download claims beyond that.
+
+The first screen leads with what's out: open[flow] as the suite's name, visual[flow] as the headline with its pitch and a link to its repo, and the teaser beside it, playing muted (not for visitors who ask for reduced motion). The teaser is sized to the viewport's height, so the whole film is in view without scrolling at 1080p (1920×930 inside the browser: 1045×588, ending 737 px down) and on a 1366×680 laptop; below 960 px wide it stacks under the copy. The suite row below shows all three apps, the two to come dimmed until hovered.
 
 The selected original A proposal uses bold typography, a flowing amber hero and three product columns. The wave is a standalone generated asset. Product panels use CSS viewports into the supplied concept image, with visible Concept preview labels; they are not actual app screenshots. Research included [Siteinspire](https://www.siteinspire.com/), [teenage engineering](https://teenage.engineering/products) and [Smörgåsbord](https://smorgasbord.studio/). Their product focus and quiet navigation informed the direction; no layouts or assets were copied.
 
