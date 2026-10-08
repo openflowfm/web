@@ -10,7 +10,7 @@ for (const [, url] of html.matchAll(/(?:href|src)="([^"]+)"/g)) {
   else if (url.startsWith('./') && url !== './') await access(resolve(root, url));
   else if (/^https?:/.test(url)) assert.equal(new URL(url).protocol, 'https:');
 }
-assert(html.includes('<title>open[flow]'), 'Missing site title');
+assert(/<title>[^<]*open\[flow\][^<]*<\/title>/.test(html), 'Missing site title naming open[flow]');
 assert(!/https?:[^"\s]+\.(?:css|js|woff2?)/.test(html), 'Unexpected remote runtime asset');
 const css = await readFile(resolve(root, 'styles.css'), 'utf8');
 for (const [, url] of css.matchAll(/url\(['"]?(\.\/[^)'"]+)['"]?\)/g)) await access(resolve(root, url));

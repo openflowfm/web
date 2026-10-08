@@ -1,6 +1,6 @@
 # open[flow] web
 
-The open[flow] marketing site: a small, static proof of concept based on the user-selected original A / After dark concept. Pure black, ivory typography, an amber filament wave, visual[flow] and its teaser on the first screen, and the three apps below it. No framework, build step, dependencies or remotely loaded fonts.
+The open[flow] marketing site: small and static, in the "Signal" design, which wears the visual[flow] teaser's identity. visual[flow] and its teaser on the first screen, the three apps below it. No framework, build step, dependencies or remotely loaded fonts.
 
 ## Local preview
 
@@ -16,10 +16,10 @@ It listens on `PORT` when set (a launcher such as `.claude/launch.json` with `au
 
 - `dist/index.html` contains the page content and native About disclosure.
 - `dist/styles.css` contains the responsive layout and theme.
-- `dist/assets/openflow-mark.png` is the selected open[flow] logo.
-- `dist/assets/amber-wave.png` is the standalone hero artwork.
+- `dist/assets/openflow-mark.svg` is the open[flow] mark (ink brackets, lime wave), used in the header and as the favicon.
+- `dist/assets/fonts/` holds Space Grotesk (400, 500, 700) and JetBrains Mono (400, 500), Latin woff2 from Fontsource, with their SIL Open Font Licence texts.
 - `dist/assets/homepage-concept.png` is the supplied concept used for labelled product preview panels.
-- `dist/assets/video/` holds the visual[flow] teaser as served on the page: 1080p (~15 MB) and a 720×1280 vertical cut (~12 MB), two-pass H.264 with `+faststart`, and a poster frame.
+- `dist/assets/video/` holds the visual[flow] teaser as served on the page: 1080p (~15 MB) and a 720×1280 vertical cut (~12 MB), two-pass H.264 with `+faststart`, a poster frame, and `visual-flow-still.jpg` (a frame from the drop) for the visual[flow] card.
 - `media/` holds the 1080p masters of the teaser (landscape and 1080×1920 vertical), in Git LFS. They aren't deployed.
 
 ```sh
@@ -53,13 +53,13 @@ on in the repo's Pages settings.
 
 ## Content and design
 
-Capabilities come from each app's own repository, and each app card links there: [openflowfm/set](https://github.com/openflowfm/set), [openflowfm/visuals](https://github.com/openflowfm/visuals) and [openflowfm/mix](https://github.com/openflowfm/mix). The About section's user guide is still the [better-session-view wiki](https://github.com/ryangavin/better-session-view/wiki). visual[flow] is marked "Now on GitHub" because its source is public and builds; set[flow] and mix[flow] are marked "Coming soon". The site makes no release or download claims beyond that.
+Capabilities come from each app's own repository, and each app card links there: [openflowfm/set](https://github.com/openflowfm/set), [openflowfm/visuals](https://github.com/openflowfm/visuals) and [openflowfm/mix](https://github.com/openflowfm/mix). The About section links to the visual[flow] engine notes. visual[flow] is marked "Source on GitHub" because its source is public and builds, and its button reads "Explore the Source"; set[flow] and mix[flow] are marked "Coming Soon". The site makes no release or download claims beyond that.
 
-The first screen leads with what's out: open[flow] as the suite's name, visual[flow] as the headline with its pitch and a link to its repo, and the teaser beside it, playing muted (not for visitors who ask for reduced motion). The teaser is sized to the viewport's height, so the whole film is in view without scrolling at 1080p (1920×930 inside the browser: 1045×588, ending 737 px down) and on a 1366×680 laptop; below 960 px wide it stacks under the copy. The suite row below shows all three apps, the two to come dimmed until hovered.
+The copy tells one story, the "Second Life" voice: the visualizer that lit up 2001, rebuilt 25 years later for the stage. The first screen leads with what's out: a status line, visual[flow] as the headline, the pitch, a lime "Explore the Source" pill and a "Meet the Suite" link, with the teaser beside it, playing muted (started from script, and not at all for visitors who ask for reduced motion). The teaser is sized to the viewport's height, so the whole film is in view without scrolling at 1080p (1920×930 inside the browser: 1040×585, ending 734 px down, with the suite heading peeking at 882) and on a 1366×680 laptop (755×425); below 960 px wide the film comes first, full width. The suite row below, "The Whole Flow", shows the three apps as panels, each with its channel colour on its `[flow]`; the two to come carry a hatch over their concept preview that lifts on hover.
 
-The selected original A proposal uses bold typography, a flowing amber hero and three product columns. The wave is a standalone generated asset. Product panels use CSS viewports into the supplied concept image, with visible Concept preview labels; they are not actual app screenshots. Research included [Siteinspire](https://www.siteinspire.com/), [teenage engineering](https://teenage.engineering/products) and [Smörgåsbord](https://smorgasbord.studio/). Their product focus and quiet navigation informed the direction; no layouts or assets were copied.
+The "Signal" design came from a design review that moved the site off amber and onto the teaser's identity; the copy from a copy review that picked the heritage story. Product panels use CSS viewports into the supplied concept image, with visible Concept preview labels; they are not actual app screenshots. Research included [Siteinspire](https://www.siteinspire.com/), [teenage engineering](https://teenage.engineering/products) and [Smörgåsbord](https://smorgasbord.studio/). Their product focus and quiet navigation informed the direction; no layouts or assets were copied.
 
-The visual[flow] teaser is real footage, not a concept: every frame is drawn by the visual[flow] engine from the music, and the edit is made in Remotion. Its source, cut lists and how to re-render it are in [openflowfm/visuals `teaser/`](https://github.com/openflowfm/visuals/tree/main/teaser). The presets it shows are from the Cream of the Crop MilkDrop pack, by their authors. The music is a placeholder beat until there is a real track, and the page says so.
+The visual[flow] teaser is real footage, not a concept: every frame is drawn by the visual[flow] engine from the music, and the edit is made in Remotion. Its source, cut lists and how to re-render it are in [openflowfm/visuals `teaser/`](https://github.com/openflowfm/visuals/tree/main/teaser). The presets it shows are from the Cream of the Crop MilkDrop pack, by their authors. The music is a placeholder beat until there is a real track.
 
 ## Licence
 
