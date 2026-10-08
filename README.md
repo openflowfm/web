@@ -53,7 +53,7 @@ on in the repo's Pages settings.
 
 ## Content and design
 
-Capabilities come from the set[flow], visual[flow] and mix[flow] module documentation in [better-session-view](https://github.com/ryangavin/better-session-view). Product links currently lead to those modules; the site makes no release or download claims.
+Capabilities come from the set[flow], visual[flow] and mix[flow] module documentation in [better-session-view](https://github.com/ryangavin/better-session-view). The set[flow] and mix[flow] links currently lead to those modules; visual[flow] links to its own repository, [openflowfm/visuals](https://github.com/openflowfm/visuals). The site makes no release or download claims.
 
 The selected original A proposal uses bold typography, a flowing amber hero and three product columns. The wave is a standalone generated asset. Product panels use CSS viewports into the supplied concept image, with visible Concept preview labels; they are not actual app screenshots. Research included [Siteinspire](https://www.siteinspire.com/), [teenage engineering](https://teenage.engineering/products) and [Smörgåsbord](https://smorgasbord.studio/). Their product focus and quiet navigation informed the direction; no layouts or assets were copied.
 
