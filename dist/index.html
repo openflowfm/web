@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#000000">
-<meta name="description" content="Manage your Live set. Shape the visuals. Take a mix apart. Discover open[flow], tools for music and performance.">
+<meta name="description" content="visual[flow]: MilkDrop, rebuilt native for the stage. The first app in open[flow], tools for the way you play. set[flow] and mix[flow] are coming soon.">
 <title>open[flow] — Tools for the way you play.</title>
 <link rel="icon" href="./assets/openflow-mark.png" type="image/png"><link rel="stylesheet" href="./styles.css">
 </head>
@@ -12,26 +12,33 @@
 <div class="page">
 <header class="masthead">
 <a class="brand" href="./" aria-label="open flow home"><span class="brand-mark"><img src="./assets/openflow-mark.png" width="70" height="70" alt=""></span><span>open[flow]</span></a>
-<nav aria-label="Main navigation"><a href="#apps">Apps</a><a href="#about">About</a><a href="https://github.com/openflowfm">GitHub</a></nav>
+<nav aria-label="Main navigation"><a href="#suite">Suite</a><a href="#about">About</a><a href="https://github.com/openflowfm">GitHub</a></nav>
 </header>
 <main id="main">
 <section class="hero" aria-labelledby="hero-title">
-<div class="hero-copy"><h1 id="hero-title">Tools for the<br>way you play.</h1><p>Manage your Live set. Shape the visuals. Take a mix apart.</p>
-<div class="actions"><a class="button primary" href="#apps">Explore the apps <span aria-hidden="true">→</span></a><a class="button secondary" href="https://github.com/openflowfm">View on GitHub</a></div></div>
-<p class="hero-note">Music<br>meets<br>what’s<br>next<span aria-hidden="true">—</span></p>
-</section>
-<section class="apps" id="apps" aria-label="The open flow apps">
-<article id="set" class="app"><a class="app-link" href="https://github.com/openflowfm/set"><h2>set[flow]</h2><p>Session management for Ableton Live</p><figure><div class="preview preview-set" role="img" aria-label="Concept illustration of a session grid, not an actual app screenshot"></div><figcaption>Concept preview</figcaption></figure></a></article>
-<article id="visual" class="app"><a class="app-link" href="https://github.com/openflowfm/visuals"><h2>visual[flow]</h2><p>A VJ rig that follows your set</p><figure><div class="preview preview-visual" role="img" aria-label="Concept illustration of live visuals, not an actual app screenshot"></div><figcaption>Concept preview</figcaption></figure></a></article>
-<article id="mix" class="app"><a class="app-link" href="https://github.com/openflowfm/mix"><h2>mix[flow]</h2><p>Local stem separation and playback</p><figure><div class="preview preview-mix" role="img" aria-label="Concept illustration of four audio stems, not an actual app screenshot"></div><figcaption>Concept preview</figcaption></figure></a></article>
-</section>
-<section class="teaser" id="visual-teaser" aria-labelledby="teaser-title">
-<header class="teaser-head"><h2 id="teaser-title">visual[flow] <span>teaser</span></h2><p>MilkDrop, rebuilt native for the stage. Every frame drawn by the visual[flow] engine from the music.</p></header>
-<video class="teaser-video" controls playsinline preload="metadata" poster="./assets/video/visual-flow-teaser-poster.jpg" width="1920" height="1080">
+<div class="hero-copy">
+<p class="eyebrow">open[flow] — tools for the way you play</p>
+<p class="status"><span class="badge now">Now on GitHub</span> The first app in the suite</p>
+<h1 id="hero-title">visual[flow]</h1>
+<p class="lede">MilkDrop, rebuilt native for the stage. 9,744 community presets drawn on the GPU, in time with your music and anything on Ableton Link.</p>
+<div class="actions"><a class="button primary" href="https://github.com/openflowfm/visuals">Get visual[flow] <span aria-hidden="true">→</span></a><a class="button secondary" href="#suite">See what’s next</a></div>
+<p class="next">Coming soon to the suite: <a href="#set">set[flow]</a> and <a href="#mix">mix[flow]</a></p>
+</div>
+<figure class="hero-film">
+<video id="teaser" class="teaser-video" autoplay muted loop playsinline controls preload="auto" poster="./assets/video/visual-flow-teaser-poster.jpg" width="1920" height="1080" aria-label="visual[flow] teaser">
 <source src="./assets/video/visual-flow-teaser.mp4" type="video/mp4">
 <a href="./assets/video/visual-flow-teaser.mp4">Watch the visual[flow] teaser (MP4)</a>
 </video>
-<p class="teaser-note">Placeholder music. <a href="./assets/video/visual-flow-teaser-vertical.mp4">Vertical cut (9:16)</a></p>
+<figcaption>Every frame drawn by visual[flow] from the music. Placeholder music. <a href="./assets/video/visual-flow-teaser-vertical.mp4">Vertical cut (9:16)</a></figcaption>
+</figure>
+</section>
+<section class="suite" id="suite" aria-labelledby="suite-title">
+<h2 id="suite-title" class="suite-title">The open[flow] suite</h2>
+<div class="apps">
+<article id="visual" class="app"><a class="app-link" href="https://github.com/openflowfm/visuals"><p class="app-status"><span class="badge now">Now on GitHub</span></p><h3>visual[flow]</h3><p>A VJ rig that follows your set</p><figure><img class="preview" src="./assets/video/visual-flow-teaser-poster.jpg" width="1920" height="1080" alt="The visual[flow] wordmark over a MilkDrop preset, from the teaser"><figcaption>From the teaser</figcaption></figure></a></article>
+<article id="set" class="app soon"><a class="app-link" href="https://github.com/openflowfm/set"><p class="app-status"><span class="badge">Coming soon</span></p><h3>set[flow]</h3><p>Session management for Ableton Live: the clip grid, the mixer and the device chain</p><figure><div class="preview preview-set" role="img" aria-label="Concept illustration of a session grid, not an actual app screenshot"></div><figcaption>Concept preview</figcaption></figure></a></article>
+<article id="mix" class="app soon"><a class="app-link" href="https://github.com/openflowfm/mix"><p class="app-status"><span class="badge">Coming soon</span></p><h3>mix[flow]</h3><p>Stem separation: a mix in, four parts out, played back locally</p><figure><div class="preview preview-mix" role="img" aria-label="Concept illustration of four audio stems, not an actual app screenshot"></div><figcaption>Concept preview</figcaption></figure></a></article>
+</div>
 </section>
 <details id="about" class="about"><summary>About open[flow]</summary><div><p>open[flow] is a family of music tools. set[flow] and visual[flow] work with Ableton Live through a shared bridge. mix[flow] separates and plays audio locally, on its own.</p><a href="https://github.com/ryangavin/better-session-view/wiki">Read the user guide ↗</a></div></details>
 </main>
@@ -43,6 +50,8 @@ function revealAbout() { if (location.hash === '#about') document.querySelector(
 window.addEventListener('hashchange', revealAbout);
 document.querySelector('a[href="#about"]').addEventListener('click', () => { document.querySelector('#about').open = true; });
 revealAbout();
+// The teaser plays muted on load, unless the visitor asked for less motion.
+if (matchMedia('(prefers-reduced-motion: reduce)').matches) { const v = document.querySelector('#teaser'); v.removeAttribute('autoplay'); v.pause(); }
 </script>
 </body>
 </html>

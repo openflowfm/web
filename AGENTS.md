@@ -6,6 +6,7 @@ This repository is the open[flow] marketing site, deployed to GitHub Pages.
 - Authored public files live in `dist/`; only that directory is deployed.
 - Keep local asset links relative for the `/web/` Pages path.
 - Preserve the user-selected original A / After dark direction: pure black, ivory grotesk headings, amber filament wave, three product preview columns.
+- The first screen leads with the app that's out (visual[flow]) and its teaser; the whole teaser must be in view without scrolling at 1080p (about 1920×930 inside the browser). The other apps are teased below as Coming soon. Check both after any hero change.
 - Ground product claims in current project documentation. Do not invent availability or testimonials. The supplied mockup panels are explicitly labelled Concept preview, never real screenshots.
 - Keep content changes and README documentation together where relevant.
 - Run `npm run check` before committing. This does not replace browser QA when requested.
