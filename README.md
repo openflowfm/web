@@ -32,9 +32,24 @@ The check validates local asset references, section links, unique IDs and basic 
 
 GitHub Pages publishes `dist/` through `.github/workflows/pages.yml`. Pull requests run checks; pushes to `main` run checks and deploy. Pages must use **GitHub Actions** as its publishing source. No build dependencies or secrets are required; deployment uses GitHub's scoped workflow token.
 
-Expected URL: https://openflowfm.github.io/web/
+URL: https://openflow.fm/ (the custom domain, set in the repo's Pages settings; with an
+Actions-published site there is no `CNAME` file). https://openflowfm.github.io/web/
+redirects there.
 
-All local asset URLs are relative, so the site works under the `/web/` project path or at a custom-domain root. No custom domain is configured.
+All local asset URLs are relative, so the site works at the domain root and under the
+`/web/` project path alike.
+
+DNS for `openflow.fm` (at Namecheap) points at GitHub Pages:
+
+| Type | Host | Value |
+| --- | --- | --- |
+| A | `@` | `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153` (one record each) |
+| AAAA | `@` | `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153` (one record each) |
+| CNAME | `www` | `openflowfm.github.io.` |
+| TXT | `_github-pages-challenge-openflowfm` | the value from the org's Pages settings, which verifies the domain for the openflowfm organisation |
+
+Once the records resolve, GitHub issues the certificate and "Enforce HTTPS" can be turned
+on in the repo's Pages settings.
 
 ## Content and design
 
